@@ -1,0 +1,15 @@
+CREATE TABLE IF NOT EXISTS `arac_marka` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `isim` varchar(100) CHARACTER SET utf8 COLLATE utf8_turkish_ci NOT NULL,
+  `durum` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE IF NOT EXISTS `arac_model` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `marka_id` int(11) DEFAULT NULL,
+  `isim` varchar(100) CHARACTER SET utf8 COLLATE utf8_turkish_ci NOT NULL,
+  `durum` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
